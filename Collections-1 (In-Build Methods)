@@ -1,0 +1,95 @@
+**ONE PAGE TABULAR CHEAT SHEET** — exactly what you can keep for **revision before DSA practice, projects, or interviews**.
+
+---
+
+# 📘 Java Collections – Interview & DSA Cheat Sheet
+
+---
+
+## 🔹 **List (Common to ArrayList, LinkedList, Vector, Stack)**
+
+| Method                                      | Use Case                | Time Complexity                        |
+| ------------------------------------------- | ----------------------- | -------------------------------------- |
+| `add(E e)`                                  | Add element at end      | O(1) amortized                         |
+| `add(int i, E e)`                           | Insert at index         | O(n)                                   |
+| `get(int i)`                                | Access element          | O(1) ArrayList/Vector, O(n) LinkedList |
+| `set(int i, E e)`                           | Replace element         | O(1) ArrayList/Vector, O(n) LinkedList |
+| `remove(int i)`                             | Remove at index         | O(n)                                   |
+| `remove(Object o)`                          | Remove first match      | O(n)                                   |
+| `size()`                                    | Number of elements      | O(1)                                   |
+| `isEmpty()`                                 | Check if empty          | O(1)                                   |
+| `contains(Object o)`                        | Check if element exists | O(n)                                   |
+| `indexOf(Object o)`                         | Find first occurrence   | O(n)                                   |
+| `lastIndexOf(Object o)`                     | Find last occurrence    | O(n)                                   |
+| `clear()`                                   | Remove all elements     | O(n)                                   |
+| Iteration (`for`, `for-each`, `iterator()`) | Traverse list           | O(n)                                   |
+
+---
+
+## 🔹 **ArrayList (Dynamic Array)**
+
+| Method                    | Use Case                   | Time Complexity |
+| ------------------------- | -------------------------- | --------------- |
+| `add(e)`                  | Append element             | O(1) amortized  |
+| `get(i)`                  | Random access              | O(1)            |
+| `set(i, e)`               | Update element             | O(1)            |
+| `remove(i)`               | Remove at index            | O(n)            |
+| `ensureCapacity(int cap)` | Increase capacity manually | O(n) worst      |
+
+👉 **When to use**: Fast **index-based access** (subarray problems, dynamic arrays, storing results).
+
+---
+
+## 🔹 **LinkedList (Doubly Linked List, also Queue/Deque)**
+
+| Method          | Use Case                    | Time Complexity |
+| --------------- | --------------------------- | --------------- |
+| `addFirst(e)`   | Insert at head              | O(1)            |
+| `addLast(e)`    | Insert at tail              | O(1)            |
+| `removeFirst()` | Remove from head            | O(1)            |
+| `removeLast()`  | Remove from tail            | O(1)            |
+| `getFirst()`    | Peek head                   | O(1)            |
+| `getLast()`     | Peek tail                   | O(1)            |
+| `offer(e)`      | Queue-style insert at end   | O(1)            |
+| `poll()`        | Queue-style remove at front | O(1)            |
+| `peek()`        | Queue-style peek front      | O(1)            |
+
+👉 **When to use**: **Queue/Deque**, LRU Cache, when frequent **insertions/removals at ends** are needed.
+
+---
+
+## 🔹 **Stack (LIFO – subclass of Vector)**
+
+| Method      | Use Case               | Time Complexity |
+| ----------- | ---------------------- | --------------- |
+| `push(e)`   | Insert at top          | O(1)            |
+| `pop()`     | Remove & return top    | O(1)            |
+| `peek()`    | View top               | O(1)            |
+| `isEmpty()` | Check if stack empty   | O(1)            |
+| `search(o)` | Find element (1-based) | O(n)            |
+
+👉 **When to use**: Parentheses matching, DFS, undo/redo, expression evaluation.
+
+---
+
+## 🔹 **Vector (Legacy, Synchronized ArrayList)**
+
+| Method       | Use Case         | Time Complexity |
+| ------------ | ---------------- | --------------- |
+| `add(e)`     | Add element      | O(1) amortized  |
+| `get(i)`     | Random access    | O(1)            |
+| `set(i, e)`  | Update element   | O(1)            |
+| `remove(i)`  | Remove element   | O(n)            |
+| `capacity()` | Current capacity | O(1)            |
+
+👉 **When to use**: Rare in modern projects. Only if **thread-safety** needed.
+
+---
+
+# 🚀 Quick Takeaways:
+
+* ✅ For **DSA**: Focus on `ArrayList` (dynamic arrays), `LinkedList` (queues/deques), `Stack` (LIFO problems).
+* ✅ For **Projects**: Mostly use `ArrayList` (fast access) + sometimes `LinkedList` for queue-like structures.
+* ✅ For **Interviews**: Be ready to explain **time complexities** of these methods + differences between `ArrayList`, `LinkedList`, `Stack`, `Vector`.
+
+---
