@@ -47,7 +47,7 @@ Requirements: Java 8+ and an IDE (IntelliJ, Eclipse, or VS Code).
 ## 👨‍💻 Author
 
 **Ganning Joel**  
-Aspiring Java Full Stack Developer | Skilled in Java, Spring Boot, MySQL | Passionate about backend development and building real-world applications.
+Passionate Java Backend Developer | Skilled in Java, Spring Boot, SQL, DSA, Problem Solving and Developing Applications | Passionate about building real-world applications.
 
 ---
 
