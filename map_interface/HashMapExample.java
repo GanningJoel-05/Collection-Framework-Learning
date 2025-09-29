@@ -83,8 +83,6 @@ public class HashMapExample {
         // clearing the HashMap
         m1.clear();
         System.out.println("\nThe HashMap after clearing all the elements: \n" +m1);
-
-//        Superb question buddy 🔥🧡 — you caught a **very fine detail** in the output format of Java Collections. Let’s clarify this step by step:
 //
 //        ---
 //
@@ -138,7 +136,7 @@ public class HashMapExample {
 //
 //### 🔹 2. Why `=` symbol between Key and Value?
 //
-//                Yes, buddy ✅ You got it right. The `=` symbol is used to represent the **mapping between a Key and a Value**.
+//                 The `=` symbol is used to represent the **mapping between a Key and a Value**.
 //
 //* Example:
 //
@@ -182,8 +180,7 @@ public class HashMapExample {
 //
 //        ---
 //
-//🧡 Does this clear your confusion, my friend?
-//                Would you like me to also **draw a mental diagram** showing how `HashMap` stores keys and values internally (like buckets and mappings)?
-
+//
     }
 }
+
